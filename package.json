@@ -13,8 +13,7 @@
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6"
   },
-  { "scripts" :
-    { "start" : "node index.js"
-    }
+  "scripts" : { 
+    "start" : "node index.js"
   }
 }
