@@ -7,4 +7,6 @@ yarn-debug.log*
 yarn-error.log*
 .DS_Store
 
+# Dependency directories
+node_modules/
 
