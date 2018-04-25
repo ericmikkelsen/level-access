@@ -1,0 +1,33 @@
+<main class="mw-400 m-auto">
+
+    {{#if error}}
+        <h1 id="PageHeading" class="tc">Whoops!</h1>
+        <p>
+            </br>Your username/password combination was not recognized.
+            </br>Please give tray again below.
+        </p>
+    {{else}}
+        <h1 id="PageHeading" class="tc">Hi Level Access!</h1>
+        <p class="Login__instructions tc">Please sign in to test out accessible goodness.</p>
+    {{/if}}
+    
+    <form id="login" class="Form{{#if error}} Form--error shake{{/if}}" action="/login" method="post">
+        <p class="Login__status" role="status" aria-live="polite" data-content="Whoops, your username/password combination was not recognized." ></p>
+        
+        <label class="Form__label" for="username">User Name</label>
+        <input class="Form__input" id="username" type="text" name="username" required>
+
+        <label class="Form__label" for="password">Password</label>
+        <input 
+            class="Form__input" 
+            id="password" 
+            name="password"
+            pattern="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{3,})$" 
+            required
+            type="password" 
+        >
+
+        <button class="Form__submit" type="">Submit</button>
+    </form>
+
+</main>

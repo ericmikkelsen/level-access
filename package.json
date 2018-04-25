@@ -1,0 +1,16 @@
+{
+  "name": "level-access",
+  "version": "1.0.0",
+  "description": "Take Home Test for Eric Mikkelsen for the position of Accessibility Consultant",
+  "main": "index.js",
+  "repository": {},
+  "author": "Eric Mikkelsen",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6"
+  }
+}

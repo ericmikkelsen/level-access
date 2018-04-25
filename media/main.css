@@ -1,0 +1,132 @@
+html {
+    /* somewhere between AA and AAA approved colors */
+    --red-light: #f87;
+    --red-black: #400;
+
+    --green-light: #bdb;
+    --green-bold: #364;
+    --green-black: #132;
+
+    --blue-light: #bce;
+    --blue-bold: #234;
+    --blue-black: #012;
+
+    --light: #ffe;
+    --dark: var(--blue-black);
+
+    font-family: 'Catamaran', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, Arial, sans-serif;
+    font-size: calc(.875em + .875vw);
+    background: var(--light);
+    color: var(--dark);
+    letter-spacing: .0375em;
+    font-weight: 600;
+    line-height: 1.5;
+}
+h1,h2,h3 {
+    font-weight: 900;
+}
+
+@keyframes slideup {
+  from {
+    opacity: .5;
+    transform: translateY(.75em);
+  }
+}
+
+@keyframes shake {
+  25% { transform: translateX( .75em ) }
+  75% { transform: translateX( -.75em ) }
+}
+
+@media screen and (prefers-reduced-motion) { 
+    @keyframes slideup {}
+    @keyframes shake {}
+}
+
+.Form {
+    align-items: center;
+    background: var(--blue-light);
+    border-left: .125em solid;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 2.5% 5%;
+}
+
+.Form--error {
+    will-change: transform;
+    background: var(--red-light);
+    border-color: var(--red-black);
+    border-width: .25em;
+}
+
+.rise {
+    animation: .5s slideup;
+}
+
+.shake {
+    animation: .25s shake 2;
+}
+
+.Form > * {
+    padding: 0;
+    margin: 1rem 0 0;
+    font-size: inherit;
+}
+
+.Form__label {
+    width: 6em;
+    max-width: 100%;
+}
+.Form__label:after {
+    content: ':'
+}
+
+.Form__input {
+    font-size: .75em;
+    min-width: 70%;
+    flex-grow: 1;
+    padding: .25em;
+    border-radius: .25em;
+    border: .125em solid;
+    color: #012;
+}
+
+.Form__input:focus {
+    outline: .5em solid;
+}
+
+.Form__submit {
+    background: var(--blue-light);
+    border-radius: .25em;
+    border: none;
+    font-family: inherit;
+    letter-spacing: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 30%;
+    padding: .5em 1em;
+    border: .1em solid var(--blue-black);
+}
+
+.Form__submit:focus{
+    background: var(--blue-black);
+    color: var(--light);
+}
+
+.Form__submit:focus:after{
+    content: ' ▶';
+}
+
+/* utilities */
+.tc {
+    text-align: center;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mw-400 {
+    max-width: 28em;
+}
