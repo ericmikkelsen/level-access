@@ -9,11 +9,11 @@
         Forms
     </h2>
     <p>
-        The login Screen was fairly straight forward with a username and password. So the easy part was making sure I used the appropriate types of inputs. slap a <pre>type="password"</pre> on that input and we're good.
+        The login Screen was fairly straightforward with a username and password. So the easy part was making sure I used the appropriate types of inputs. slap a <pre>type="password"</pre> on that input and we're good.
     </p>
     <p>The next part was using the correct <pre>pattern</pre> to make sure when someone brings up a keyboard on their phone or tablet that it brings up the right one, (hopefully numbers &amp; letters). I went back and forth about actually a pattern that forced people to use upper and lower case letters, instead of just validating it later, And I decided to just let the input do some early validation and make people's lives easier.</p>
     <h2>Progressive Enhancement</h2>
-    <p>Progressive enhancement seems like a nerds game these days, but as long as I'm doing a test I might as well do it right. If javascript doesn't run that's totally fine, and an error page is rendered serverside.</p>
+    <p>Progressive enhancement seems like a nerds game these days, but as long as I'm doing a test I might as well do it right. If javascript doesn't run that's totally fine, and an error page is rendered server side.</p>
     <h2>Error State and Live Regions</h2>
     <p>This was the part that I wasn't sure about how to handle And I had to look up. These are the articles I found about it.</p>
     <ul>
@@ -31,7 +31,7 @@
     <h3>Color and Contrast</h3>
     <p>I was trying to accomplish 3 things with the color, make something pleasing to the eye, use color to convey contextual information like error states, and be highly readable with decent contrast.</p>
     <p>I didn't have alot of stuff to build, so my main colors are the beige and blue, which should both be less harsh than white on black, but have a ton of contrast and meet AAA accessibility standards.</p>
-    <p>The red is used to indicate error states, and isn't left to do it's work alone. There's always supporting text and occaionally animations to indicate state. I had a couple versions with an X in the corner, but it just looked like a close button.</p>
+    <p>The red is used to indicate error states, and isn't left to do it's work alone. There's always supporting text and occasionally animations to indicate state. I had a couple versions with an X in the corner, but it just looked like a close button.</p>
     <h3>Miscellaneous CSS</h3>
     <h4>Animations</h4>
     <p>The only animation I use on the test is to convey additional context on error states (head shaking on the form) but those animations are removed if a user has selected the "prefers-reduced-motion" setting on their device.</p>
