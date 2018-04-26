@@ -114,8 +114,9 @@ h1,h2,h3 {
     color: var(--light);
 }
 
-.Form__submit:focus:after{
-    content: ' ▶';
+
+.Form__submit:not(:focus)>.arrow{
+    display: none;
 }
 
 /* utilities */
