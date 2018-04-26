@@ -1,4 +1,4 @@
-#Getting Started
+# Getting Started
 The steps to getting this project up and going should be pretty easy just
 
 - npm install (or yarn if you have it)
